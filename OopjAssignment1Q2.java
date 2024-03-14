@@ -16,7 +16,7 @@ class OopjAssignment1Q2{
 	System.out.print("Year: " + year);
 	System.out.println();
 
-	/*
+	
 	if (year % 4 == 0) {
 		
 		System.out.println(year + " is a Leap Year");
@@ -24,7 +24,7 @@ class OopjAssignment1Q2{
 		
 		System.out.println(year + " is Not a Leap Year");
 	}
-	/*
+	
 
 	/*
 	switch(year % 4){
@@ -38,7 +38,7 @@ class OopjAssignment1Q2{
 			break;
 	
 	}
-	/*
+	*/
 	
 	sc.close();
 	}
