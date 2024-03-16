@@ -35,6 +35,8 @@ public class OopjAssignment4Q2 {
 
         Vehicle vehicle = new Vehicle();
 
+        System.out.println("----------------------------");
+
         vehicle.car("Maruti Swift","Blue",1000000);
 
         System.out.println("----------------------------");
