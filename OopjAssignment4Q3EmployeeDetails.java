@@ -3,7 +3,7 @@
     Demonstrate calling each overloaded method with appropriate arguments. 
 */
 
-public class OopjAssignment4Q3 {
+public class OopjAssignment4Q3EmployeeDetails {
 
     public static class Employee {
 
