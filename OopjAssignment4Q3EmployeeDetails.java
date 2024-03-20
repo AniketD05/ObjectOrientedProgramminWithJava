@@ -3,33 +3,31 @@
     Demonstrate calling each overloaded method with appropriate arguments. 
 */
 
-public class OopjAssignment4Q3EmployeeDetails {
+ class Employee {
 
-    public static class Employee {
+    public void employeeDetails(String name, int empId, float salary) {
+        System.out.println("Name          : " + name);
+        System.out.println("Employee ID   : " + empId);
+        System.out.println("Salary        : " + salary);
 
-        public void employeeDetails(String name, int empId, float salary) {
-            System.out.println("Name          : " + name);
-            System.out.println("Employee ID   : " + empId);
-            System.out.println("Salary        : " + salary);
-
-        }
-
-        public void employeeDetails(String name, int empId, double salary) {
-            System.out.println("Name        : " + name);
-            System.out.println("Employee ID : " + empId);
-            System.out.println("Salary      : " + salary);
-
-        }
-
-        public void employeeDetails(String name, int empId, int salary, int yearsOfExperience) {
-            System.out.println("Name         : " + name);
-            System.out.println("Employee ID  : " + empId);
-            System.out.println("Salary       : " + salary);
-            System.out.println("Years of Exp : " + yearsOfExperience);
-
-        }
     }
 
+    public void employeeDetails(String name, int empId, double salary) {
+        System.out.println("Name        : " + name);
+        System.out.println("Employee ID : " + empId);
+        System.out.println("Salary      : " + salary);
+
+    }
+
+    public void employeeDetails(String name, int empId, int salary, int yearsOfExperience) {
+        System.out.println("Name         : " + name);
+        System.out.println("Employee ID  : " + empId);
+        System.out.println("Salary       : " + salary);
+        System.out.println("Years of Exp : " + yearsOfExperience);
+
+    }
+}
+public class OopjAssignment4Q3EmployeeDetails {
     public static void main(String[] args) {
 
         Employee emp = new Employee();

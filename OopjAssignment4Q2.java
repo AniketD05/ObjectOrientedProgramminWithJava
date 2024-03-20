@@ -4,32 +4,32 @@
   Demonstrate calling these overloaded methods with various numbers of arguments. 
 */
 
-public class OopjAssignment4Q2 {
+ class Vehicle {
 
-    public static class Vehicle {
-
-        public void car(String modelName, String colour, float price) {
-            System.out.println("Model Name  : " + modelName);
-            System.out.println("Colour      : " + colour);
-            System.out.println("Price       : " + price);
-        }
-
-        public void car(String modelName, String colour, float price, String owner) {
-            System.out.println("Model Name  : " + modelName);
-            System.out.println("Colour      : " + colour);
-            System.out.println("Price       : " + price);
-            System.out.println("Owner Name  : " + owner);
-        }
-
-        public void car(String modelName, String colour, float price, String owner, int numberPlate) {
-            System.out.println("Model Name   : " + modelName);
-            System.out.println("Colour       : " + colour);
-            System.out.println("Price        : " + price);
-            System.out.println("Owner Name   : " + owner);
-            System.out.println("Number Plate : " + numberPlate);
-        }
-
+    public void car(String modelName, String colour, float price) {
+        System.out.println("Model Name  : " + modelName);
+        System.out.println("Colour      : " + colour);
+        System.out.println("Price       : " + price);
     }
+
+    public void car(String modelName, String colour, float price, String owner) {
+        System.out.println("Model Name  : " + modelName);
+        System.out.println("Colour      : " + colour);
+        System.out.println("Price       : " + price);
+        System.out.println("Owner Name  : " + owner);
+    }
+
+    public void car(String modelName, String colour, float price, String owner, int numberPlate) {
+        System.out.println("Model Name   : " + modelName);
+        System.out.println("Colour       : " + colour);
+        System.out.println("Price        : " + price);
+        System.out.println("Owner Name   : " + owner);
+        System.out.println("Number Plate : " + numberPlate);
+    }
+
+}
+
+public class OopjAssignment4Q2 {
 
     public static void main(String[] args) {
 
