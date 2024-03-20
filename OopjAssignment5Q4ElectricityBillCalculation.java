@@ -76,7 +76,7 @@ public class OopjAssignment5Q4ElectricityBillCalculation {
 
             Scanner sc = new Scanner(System.in);
 
-            System.out.println("\n--------------- Welcome to BMI Calculator ---------------\n");
+            System.out.println("\n--------------- Welcome to Electricity Bill Calculator ---------------\n");
             
             System.out.print("Enter Name  : ");
             String customerName = sc.nextLine();
