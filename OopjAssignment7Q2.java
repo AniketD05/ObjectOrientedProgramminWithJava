@@ -1,3 +1,4 @@
+
 /*2) Write a Java program to check the equality of two arrays? */
 
 import java.util.Scanner;
