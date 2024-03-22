@@ -31,77 +31,90 @@ public class OopjAssignment8Q1 {
     private static Scanner sc = new Scanner(System.in);
 
     private static int [] arr1;
-    private static int [] arr2;
+
 
     public static void initialiseArray(){
-        System.out.print("Enter the size of array 1: ");
+        System.out.print("Enter the size of array : ");
         int sizeOfArray1 = sc.nextInt();
         arr1 = new int[sizeOfArray1];
 
-        System.out.print("Enter the size of array 2: ");
-        int sizeOfArray2 = sc.nextInt();
-        arr2 = new int[sizeOfArray2];
     }
 
     public static void setElements() {
-        
-        System.out.println("\n---------Array 1---------\n");
                 
         for (int i = 0; i < arr1.length; i++) {
             System.out.print("\nEnter Elements [ " + i + " ]    : ");
             arr1[i] = sc.nextInt();
         }
-
-        System.out.println("\n---------Array 2---------\n");
-        for (int i = 0; i < arr2.length; i++) {
-            System.out.print("\nEnter Elements [ " + i + " ]    : ");
-            arr2[i] = sc.nextInt();
-        }
     }
 
     public static void getElements() {
 
-        System.out.println("\n---------Array 1---------\n");
-        System.out.println(Arrays.toString(arr1) + "\n");
-
-        System.out.println("\n---------Array 2---------\n");
-        System.out.println(Arrays.toString(arr2) + "\n");
+        System.out.println("\n" + "Array : " + Arrays.toString(arr1) + "\n");
     }
 
     public static void sumOfArray() {
-        int[] sum = new int[arr1.length];
+        int sum = 0;
         for (int i = 0; i < arr1.length; i++) {
-                sum[i] = arr1[i] + arr2[i];
+            
+                sum = sum + arr1[i];
+                
         }
-        System.out.println("\n---------Sum of Array ---------\n");
-        for (int j = 0; j < sum.length; j++) {
-            System.out.print((sum[j] + " "));
-        }
-       
+        System.out.println("Sum : " + sum + "\n");
     }
 
     public static void averageOfArray() {
+
+        int totalSum = 0;
+        float avg = 0.0f;
+        for (int i = 0; i < arr1.length; i++) {
+            totalSum += arr1[i];
+        }
+        avg = totalSum / (float)arr1.length;
+       
+        System.out.println("Average : " + avg + "\n");
+
     }
 
-    public static void largestElement() {
-    }
+    public static void largestSmallestElement(int[] arr1) {
 
-    public static void smallestElement() {
+        int largest = arr1[0];
+        int smallest = arr1[0];
+        for (int i = 1; i < arr1.length; i++) {
+            if (arr1[i] > largest) {
+                largest = arr1[i];
+            } else if(arr1[i] < smallest) {
+                smallest = arr1[i];
+            }
+        }
+        System.out.println("Largest Element: " + largest + "\n");
+        System.out.println("Smallest Element: " + smallest + "\n");
     }
 
     public static void sortedArray() {
+
+        int temp = 0;
+
+        for (int i = 0; i < arr1.length; i++) {
+            for (int j = i + 1; j < arr1.length; j++) {
+                if (arr1[i] > arr1[j]) {
+                    temp = arr1[i];
+                    arr1[i] = arr1[j];
+                    arr1[j] = temp;
+                }
+            }
+        }
+        System.out.println("Sorted Array: " + Arrays.toString(arr1) + "\n");
     }
 
     public static void main(String[] args){
 
-        
         OopjAssignment8Q1.initialiseArray();
         OopjAssignment8Q1.setElements();
         OopjAssignment8Q1.getElements();
         OopjAssignment8Q1.sumOfArray();
         OopjAssignment8Q1.averageOfArray();
-        OopjAssignment8Q1.largestElement();
-        OopjAssignment8Q1.smallestElement();
+        OopjAssignment8Q1.largestSmallestElement(arr1);
         OopjAssignment8Q1.sortedArray();
     }
 }
